@@ -1,0 +1,5 @@
+#!/work/aeslami/VLA_HPC/vla_env/bin/python3.11
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

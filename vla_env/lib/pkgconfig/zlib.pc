@@ -1,0 +1,13 @@
+prefix=/work/aeslami/VLA_HPC/vla_env
+exec_prefix=/work/aeslami/VLA_HPC/vla_env
+libdir=/work/aeslami/VLA_HPC/vla_env/lib
+sharedlibdir=/work/aeslami/VLA_HPC/vla_env/lib
+includedir=/work/aeslami/VLA_HPC/vla_env/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
