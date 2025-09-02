@@ -39,6 +39,9 @@ def run_model():
         "use_cache": False
     }
 
+    msg = pipe(messages, **generation_args)
+    print(msg)
+
 
 if __name__ == "__main__":
     run_model()
