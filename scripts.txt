@@ -1,1 +1,24 @@
 module load python3/anaconda/2023.9
+
+
+module load gcc/9.4.0
+module unload gcc/6.1.0
+
+
+idev_gpu
+
+
+source activate /work/aeslami/VLA_HPC/vla_test
+
+
+# Listing the requirements.txt to install on another platform
+pip install pipreqs
+
+pipreqs .
+
+# Need to change the temp dir so conda can create the env
+TMPDIR = "/work/aeslami/tmp"
+
+
+#### One time or env related
+conda env export > env.yml
