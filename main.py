@@ -4,7 +4,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
 import torch
 import os
 os.environ["HF_Home"] = "/work/aeslami/.cache"
-
+print("Loaded the libraries!")
 
 def run_model():
 
@@ -21,5 +21,5 @@ def run_model():
 
 
 if __name__ == "__main__":
-    print("here")
     run_model()
+    print("Done")
