@@ -9,7 +9,7 @@ def run_model():
 
     model_name = "microsoft/Phi-3.5-mini-instruct"
 
-    model = AutoModelForCausalLM(
+    model = AutoModelForCausalLM.from_pretrained(
         model_name,
         device_map="auto",
         torch_device="auto",
@@ -19,3 +19,4 @@ def run_model():
 
 if __name__ == "__main__":
     print("here")
+    run_model()
